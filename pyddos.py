@@ -55,7 +55,7 @@ except:
 if os.name == 'nt':
 	colorama.init()
 
-signal.signal(signal.SIGPIPE,signal.SIG_DFL)
+#signal.signal(signal.SIGPIPE,signal.SIG_DFL) there isn't a SIGPIPE attribute in signal module (i recommend to delete it)
 
 def fake_ip():
 	skip = '127'
